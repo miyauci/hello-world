@@ -16,6 +16,8 @@ jobs:
         run: yarn install
       - name: Linting
         run: yarn lint
+      - name: Building
+        run: yarn build
       - name: Testing
         run: yarn test
       # - run: npm run start
