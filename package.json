@@ -1,0 +1,12 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "index.js",
+  "repository": "https://github.com/miyauci/hello-world.git",
+  "author": "miyauchi <miyauchi@qualitia.co.jp>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
