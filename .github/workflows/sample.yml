@@ -12,7 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1 # todo: switch to v2
+      - name: Initialize
       - run: yarn install
+      - name: Linting
+      - run: yarn lint
+      - name: Testing
       - run: yarn test
       # - run: npm run start
       # - run: npm run format-check
