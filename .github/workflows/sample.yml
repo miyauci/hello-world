@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # todo: switch to v2
+      - uses: actions/checkout@v2 # todo: switch to v2
       - name: Initialize
         run: yarn install
       - name: Linting
