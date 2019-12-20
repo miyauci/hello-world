@@ -1,2 +1,3 @@
-const a = 11;
-console.log(a);
+module.exports = function(a, b) {
+  return a + b;
+};
