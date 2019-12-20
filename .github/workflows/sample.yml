@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1 # todo: switch to v2
-      - run: npm ci
-      - run: npm run start
+      - run: yarn start
+      # - run: npm run start
       # - run: npm run format-check
       # - run: npm run lint
       # - run: npm run pack
