@@ -1,4 +1,4 @@
-name: Build and Test
+name: Lint,Test and Build
 
 on:
   pull_request:
@@ -16,13 +16,7 @@ jobs:
         run: yarn install
       - name: Linting
         run: yarn lint
-      - name: Building
-        run: yarn build
       - name: Testing
         run: yarn test
-      # - run: npm run start
-      # - run: npm run format-check
-      # - run: npm run lint
-      # - run: npm run pack
-      # - run: npm run gendocs
-      # - run: npm test
+      - name: Building
+        run: yarn build
