@@ -10,7 +10,7 @@ jobs:
         # this is my public repo name
         uses: miyauci/hello-action@v1.0.0
         with:
-          who-to-greet: "neo world"
+          who-to-greet: ${{ secrets.SECRET_GREETING }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
