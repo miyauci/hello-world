@@ -1,3 +1,5 @@
+name: "Test for using public actions"
+
 on: [push]
 
 jobs:
