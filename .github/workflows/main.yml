@@ -8,9 +8,9 @@ jobs:
       - name: Hello world action step
         id: hello
         # this is my public repo name
-        uses: miyauci/hello-action
+        uses: miyauci/hello-action@v1.0.0
         with:
-          who-to-greet: "Mona the Octocat"
+          who-to-greet: "neo world"
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
