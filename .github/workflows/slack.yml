@@ -11,3 +11,8 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: test from actions
+          SLACK_MESSAGE: "Deploy succeed :rocket:"
+          SLACK_TITLE: Deploy
+          SLACK_USERNAME: Github actions
+          SLACK_COLOR: '#3278BD'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
