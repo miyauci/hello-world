@@ -18,7 +18,7 @@ jobs:
         run: yarn lint
       - name: Testing
         run: yarn test
-      - name: Building
+      # - name: Building
 
   slackNotification:
     name: Slack Notification
