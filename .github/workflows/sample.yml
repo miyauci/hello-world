@@ -19,22 +19,8 @@ jobs:
       - name: Testing
         run: yarn test
       # - name: Building
-
-  slackNotification:
-    name: Slack Notification
-    runs-on: ubuntu-latest
-    steps:
-      # - uses: actions/checkout@master
-      # - name: Slack Notification
-      #   uses: rtCamp/action-slack-notify@master
-      #   env:
-      #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      #     SLACK_TITLE: Slack Notification Demo
-      #     SLACK_MESSAGE: "Deploy succeed :rocket:"
-      #     SLACK_USERNAME: Github actions
-      #     SLACK_COLOR: "#3278BD"
-      #     SLACK_ICON: https://github.com/rtCamp.png?size=48
-      - uses: 8398a7/action-slack@v2
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v2
         with:
           status: ${{ job.status }}
           author_name: Integration Test # default: 8398a7@action-slack
@@ -43,4 +29,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # required
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }} # required
         if: always() # Pick up events even if the job fails or is canceled.
-
